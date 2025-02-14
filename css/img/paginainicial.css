@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    max-width: 1140px;
+    margin: auto;
+}
+.col{
+    display: block;
+    float: left;
+}
+
+
+/*------------------------------------------------Começando o header------------------------------------------------*/
+header{
+    /*ViewPort toda a página vh=altura, vw=largura especificadas em %*/
+    /*cover dimensiona a imagem de acordo com a pagina*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(imagemback1.jpg);
+    /*background-image: linear-gradient(to bottom right, #000000,#ffffff);/*desenhando a propria imagem*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.textoprincipal {
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.headerbtn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e67e22;
+    border-radius: 40px;
+    padding: 3px 20px;
+    font-size: 32px;
+    border: 1px solid #e74c3c;
+    
+}
+
+.headerbtn:hover{
+    background-color: #b05d14;
+    border-color: #a82315;
+}
+
+#segundoBtn{
+    margin-left: 25px;
+    background-color: rgba(0,0,0,0);
+    color: #e67e22;
+}
+
+#segundoBtn:hover{
+    background-color: #b05d14;
+    color: #fff;
+
+}
+
+
+.elementoHeader {
+    position: absolute;
+    top:40%;
+    left: 8%;
+    
+}
+
+.logoImg {
+    width: 100px;
+    height: auto;
+}
+
+.menuHeader {
+    float: right;
+    font-size: 25px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.menuHeader a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 1s;
+}
+
+.menuHeader a:hover{
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+}
+
+.menuHeader ul{
+    list-style: none;
+}
+.menuHeader li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+/*-----------------------------------Seção de Vantagens---------------------------------------*/
+
+.apresSection {
+    margin-top: 110px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.traço {
+    width: 100px;
+    border: 2px solid #e74c3c;
+    margin: auto;
+    border-radius: 2px;
+    margin-bottom: 30px;
+        
+}
+
+.paragVantagem {
+    font-size: 25px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.Vantagens ion-icon{
+    font-size: 40px;
+    color: #e74c3c;
+    margin-left: 35%;
+}
+
+.Vantagens h2{
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.Vantagens .col p{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 15px;
+}
+
+.Vantagens{
+    margin-bottom: 90px;
+}
+
+/*--------------------------------------------------------Configurações dos pratos--------------------------------------------------------*/
+
+.pratos li{
+    display: inline-block;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    background-color: #000;
+
+}
+.pratos img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.05);
+    opacity: 0.7;
+    transition: transform 1s, opacity 1s;
+        
+}
+.pratos img:hover{
+    opacity: 1;
+    transform: scale(1.15);
+
+}
+
+/*-----------------------------------------------------Configurações de Como usar-----------------------------------------------------------*/
+
+
+.celular{
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+.celular img{
+    margin-left: 150px;
+    margin-top: 40px;
+    width: 75%;
+    height: auto;
+}
+
+.passos {
+    float: right;
+    font-size: 44px;
+    display: inline-block;
+    width: 50%;
+}
+
+.passos p::first-letter{
+    font-size: 60px;
+    border: 2px solid #e74c3c;
+    border-radius: 50%;
+    padding: 0 20px;
+    line-height: 180px;
+    text-align: left;
+    color: #e74c3c;
+    
+}
+
+
+/*--------------------------------------------------------------Planos---------------------------------------------------------*/
+
+.planos {
+    text-align: center;
+    width: 1300px;
+    height: 600px;
+    display: inline-block;
+}
+
+.planos input{ /*formatação dos checkbox*/
+    margin-left: 20px;
+    float: left;
+}
+
+.planos input p{
+    text-align: left;
+}
+
+.textoPlanos {           /*Formatação do titulo da seção*/
+    font-size: 36px;
+    margin-top: 30px;
+    padding-top: 30px;
+    color:#000;
+    margin-bottom: 30px;
+}
+
+.Planos a{                /*formatação dos botões*/
+    text-decoration: none;
+    border: 2px solid #e74c3c;
+    border-radius: 20PX;
+    padding: 3px 5px;
+    color:#fff;
+    background-color: #e67e22;
+    transition: background-color 1s;
+}
+
+.Planos a:hover{         /*efeito dos botões comprar*/
+    background-color: #bf6516;
+    border-color: #a82315;
+}
+
+.blocos{                 /*formatação dos blocos de planos*/
+    margin-left: 50px;
+    margin-top: 80px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    background-color: #e67e22;
+    display: inline-block;
+}
+
+
+.serviços { 
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #e74c3c;
+    border-bottom: 2px solid #e74c3c;
+    width: 100%;
+}
+
+
+.x { /*formatação dos paragrafos dentro dos blocos de planos*/
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+/*---------------------------------------------------Comentários-----------------------------------------------------*/
+
+.Comentarios{
+    display: inline-block;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url(Clientes.jpg);/*definição
+	/*background-image: linear-gradient(to bottom right,#0b0b0b,#ff0505,#ffffff);*/
+	background-size: cover;/*ocupar toda a vizualização do user*/
+	background-attachment: fixed;/*efeito de rolagem*/
+	background-repeat: no-repeat;/*não deixar repetir imagem pequena*/
+	background-position: center;/*centralizando*/
+	height: 100vh;/*definindo tamanho*/
+    
+}
+
+.Comentarios h1{ /*Formatação do titulo da seção*/
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.comentario { /*Posicionamento dos comentarios na tela*/
+    display:inline-block;
+    width: 300px;
+    height:  400px;
+    margin-left: 35px;
+    margin-top: 20px;
+    color: #fff;
+    font-size:36px;
+    text-align: center;
+}
+
+.comentario img{ /*formatação das logo dos users*/
+    display: inline-block;
+    margin:auto;
+    border: 1px solid #e74c3c;
+    border-radius: 100px;
+    
+    
+}
+
+
